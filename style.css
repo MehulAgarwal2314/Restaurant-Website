@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+img {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -1px;
+}
+
+.links .part1 {
+  position: absolute;
+  top: 2px;
+  left: 895px;
+  height: 70px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 30px;
+  backdrop-filter: blur(8px);
+}
+.links .part2 {
+  position: absolute;
+  top: 2px;
+  left: -19px;
+  height: 70px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 30px;
+  backdrop-filter: blur(8px);
+}
+
+.links .logo {
+  height: 7vh;
+  width: 3.5vw;
+  border-radius: 500px;
+  position: absolute;
+  left: 49%;
+  top: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: "Cinzel", serif;
+  color: rgb(204, 179, 148);
+
+}
+
+a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color:  rgb(204, 179, 148);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: 0.7s ease;
+
+}
+
+a:hover::after{
+    transform: scaleX(1);
+}
+
+.links .heading1{
+    font-size: 190px;
+    position: absolute;
+    bottom: 36%;
+    left: 28%;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Inline Display', cursive;
+    color: rgb(217 170 128);
+    animation: fadein1 6s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes fadein1{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity:0;}
+    100%{opacity: 0;}
+}
+
+.links .heading2{
+    font-size: 190px;
+    position: absolute;
+    bottom: 36%;
+    left: 37%;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Inline Display', cursive;
+    color: rgb(217 170 128);
+    animation: fadein2 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadein2{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    37.5%{opacity:1;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    87.5%{opacity: 1;}
+    100%{opacity: 0;}
+}  
+
+#menu{
+  position: absolute;
+  top: 836px;
+  background-color: rgb(7, 7, 7);
+  height: 100vh;
+  width: 100vw;
+}
+
+#menu img{
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  filter: blur(1px);
+
+ }
+
+.ind{
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 50px;
+  
+ }
+
+.con{
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 1060px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 50px;
+ }
+
+ .stpara{
+  color: #fff;
+  /* border: 2px solid #fff; */
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Palanquin', sans-serif;
+  filter: brightness(2px);
+ }
+ .ndpara{
+  color: #fff;
+  /* border: 2px solid #fff; */
+  position: absolute;
+  top: 300px;
+  left: 1000px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Palanquin', sans-serif;
+  filter: brightness(2px);
+ }
+
+
+ 
+ li{
+  font-size: 50px;
+  height: 10vh;
+  list-style: none;
+ }
+
+
+
+
+
+
